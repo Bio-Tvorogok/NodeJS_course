@@ -20,11 +20,12 @@ const dispatcher = new Dispatcher();
 
 dispatcher.sub('anything', data => {
     console.log(data);
-})
+});
 
 module.exports = { 
     Dispatcher: Dispatcher,
-    EventEmitter: EventEmitter
-}
+    EventEmitter: EventEmitter,
+    dispatcher: dispatcher
+};
 
 // emitter.emit('anything', {c:2});
